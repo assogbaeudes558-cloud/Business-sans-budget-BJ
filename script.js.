@@ -1,0 +1,16 @@
+const conseils = [
+"Commence avec ce que tu as aujourd'hui.",
+"La discipline vaut plus que la motivation.",
+"Épargne une partie de chaque revenu.",
+"Écoute les besoins de tes clients avant de créer un produit.",
+"Apprends une nouvelle compétence chaque semaine.",
+"Ne crains pas de commencer petit.",
+"Un client satisfait est la meilleure publicité.",
+"Sois constant, même quand les résultats tardent.",
+"Investis d'abord dans tes connaissances.",
+"Transforme les problèmes en opportunités."
+];
+
+const index = new Date().getDate() % conseils.length;
+
+document.getElementById("texteConseil").textContent = conseils[index];
